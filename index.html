@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <div align="center">
+         <img width="500" src="./images/Saylani-logo.png" alt="">
+        <h1><u>Saylani Online Academy</u></h1>
+        <br />
+        </div>
+
+    <table align="center" width="800" cellspacing="15" bgcolor="#dedad9">
+        <th colspan="2" style="font-size: 30px;">Student Registration Form</th>
+        <form action="./next.html" method="get" >
+            
+
+            <tr>
+                <td>
+                    <label for="username">
+                        Name:
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="username" id="username" placeholder="Name" required maxlength="30" minlength="3" size="50">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fname">
+                       Father Name:
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="fathername" id="fname" placeholder="Father Name" required maxlength="30" minlength="3" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">
+                        Password:
+                    </label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="pass"  placeholder="***********" required size="50" maxlength="10" minlength="6" requride>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">
+                        Address:
+                    </label>
+                </td>
+                <td>
+                    <textarea name="useraddress" id="address" cols="47" rows="5" placeholder="Type Your Address..!">
+                    
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                        Gender:
+                </td>
+                <td>
+                    
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">
+                        Male
+                    </label>
+                
+
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">
+                        Female
+                    </label>
+
+                    
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">
+                        Other
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        Language:
+                </td>
+                <td>
+                    <input type="checkbox" name="lang" value="urdu" id="ulang">
+                    <label for="ulang">Urdu</label>
+
+                    <input type="checkbox" name="lang" value="elang" id="elang">
+                    <label for="elang">English</label>
+
+                    <input type="checkbox" name="lang" value="Alang" id="Alang">
+                    <label for="Alang">Arabic</label>
+
+                    <input type="checkbox" name="lang" value="clang" id="clang">
+                    <label for="clang">Chines</label>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="dob">Date Of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" name="dob" id="dob" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email Id:</label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="email" required placeholder="Email Id" size="50" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="num">
+                    Mobile Number:
+                </label>
+                </td>
+                <td>
+                    <input type="number" name="number" id="num"  required placeholder="Mobile Number">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                <label for="city">
+                    City:
+                </label>
+                </td>
+            <td>
+                <select  name="city" id="city">
+                    <option value="">Select Your City</option>
+                    <option align="center" value="khi">Karachi</option>
+                    <option align="center" value="hyd">Hyderabad</option>
+                    <option align="center" value="fsl">Faisalabad</option>
+                </select>
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hob">
+                        Hobbies:
+                    </label>
+                </td>
+                <td>
+                    <select name="hobby" id="hob" multiple>
+                    <option selected value="cricket">Cricket</option>
+                    <option value="football">Football</option>
+                    <option value="hokey">Hokey</option>
+                    <option value="tennis">Tennis</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pic">
+                        Picture Upload:
+                    </label>
+                </td>
+                <td>
+                    <input type="file" name="profilepic" required id="pic" accept="image/*">
+                
+                
+                    <input required type="button" value="Upload">
+                </td>
+            </tr>
+            
+            <tr>
+                <td  colspan="2" align="center">
+                    <input type="submit" value="Submit Form">
+                
+                
+                <input type="reset" value="Reset Form">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
